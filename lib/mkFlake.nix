@@ -167,7 +167,7 @@ let
               })
 
               (optionalAttrs (options ? nix.package) {
-                nix.package = lib.mkDefault nixVersions.latest;
+                nix.package = lib.mkDefault nix;
               })
 
               (optionalAttrs (options ? nix.extraOptions) {
